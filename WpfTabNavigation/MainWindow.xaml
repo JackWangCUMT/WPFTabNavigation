@@ -1,0 +1,352 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          x:Class="WpfTabNavigation.MainWindow"
+        Title="MainWindow" Height="610" Width="880"
+         AllowsTransparency="True" WindowStyle="None" 
+        Background="{x:Null}" MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        
+        >
+    <Grid Background="Black">
+        <Grid x:Name="gridForm">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" x:Name="gridFormLeft"/>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- toolbar-->
+            <StackPanel  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="1,1,1,0"  Orientation="Horizontal" >
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="images/toolbarbg.png" Stretch="UniformToFill"/>
+                </StackPanel.Background>
+
+                <Grid Width="878">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="36" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="0.8*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="appName" FontWeight="Bold" FontSize="22"  Margin="8,2,2,2" Text="WPF DashBoard"   Grid.Column="0" Grid.Row="0"	VerticalAlignment="Center" />
+                    <TextBlock x:Name="authorName" FontWeight="Bold" FontSize="10"  Margin="8,0,2,8" Text="JackWang-Cumt@cnblogs.com"  Foreground="#FF463E3E" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" />
+
+                    <TextBlock x:Name="userInfo" FontWeight="Bold" FontSize="16"  Margin="60,18,18,18" Text="Welcome to Admin"  Foreground="#FF333333" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" />
+
+                    <DatePicker x:Name="datePick"   Margin="22.4,18,194.4,18"   Foreground="#FF333333" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" Width="160"/>
+                    <Image Source="images/email.png"  Stretch="Uniform" Margin="0,15,112,19" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2"  Width="26" HorizontalAlignment="Right"/>
+                    <Image Source="images/notify.png"  Stretch="Uniform" Margin="254.4,9,102.4,10.2" Grid.Column="2" Grid.Row="0" Height="20" Width="20"/>
+                    <TextBlock x:Name="notifyCount"  FontSize="9"  Margin="259.4,12,99.4,15.2" Grid.Column="2" Grid.Row="0"  Text="18"  Foreground="#FFFFFFFF" VerticalAlignment="Center" Width="18"/>
+
+                    <Image Source="images/settings.png"  Stretch="Uniform" Margin="0,15,72,19" Grid.Column="2" Grid.Row="0" Height="26" Width="30" HorizontalAlignment="Right" Grid.RowSpan="2"  />
+                    <Image x:Name="Logout"  MouseLeftButtonDown="Logout_MouseLeftButtonDown_1"  Source="images/logout.png"  Stretch="Uniform" Margin="0,15,36,19" Grid.Column="2" Grid.Row="0" Height="26" Width="30" HorizontalAlignment="Right" Grid.RowSpan="2" Cursor="Hand"/>
+
+                </Grid>
+            </StackPanel>
+            <!--end toolbar-->
+            <StackPanel  x:Name="LeftBar" Background="#FF333333" Margin="0,0.2,0,0" Grid.Column="0" Grid.Row="1" >
+                <TabControl   TabStripPlacement="Left" Background="#FF00D1E5" Height="548">
+                    <TabItem Header="Home" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                        <TabItem.Background>
+                            <ImageBrush ImageSource="images/homeicon.png" />
+                        </TabItem.Background>
+
+                        <StackPanel Margin="2,6,2,2" >
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6" MouseLeftButtonDown="Label_MouseLeftButtonDown_1"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Web Design" Foreground="White" Margin="0,6,0,6" MouseLeftButtonDown="Label_MouseLeftButtonDown_2"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Icon Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="PSD Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Line Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Paper Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                        </StackPanel>
+
+                    </TabItem>
+                    <!-- Margin="0,0,-3,0" 中的-3为了消除右边的边框-->
+                    <TabItem Header="Projects" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                        <TabItem.Background>
+                            <ImageBrush ImageSource="images/projects.png" />
+                        </TabItem.Background>
+                        <!--内容区-->
+                        <StackPanel Margin="2,6,2,2" >
+                            <Label Content="CSS Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="JS Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="HTML Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                        </StackPanel>
+
+                        <!--end 内容区-->
+
+                    </TabItem>
+
+                    <TabItem Header="Tasks" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                        <TabItem.Background>
+                            <ImageBrush ImageSource="images/taskicon.png" />
+                        </TabItem.Background>
+                        <!--内容区-->
+                        <StackPanel Margin="2,6,2,2" >
+                            <Label Content="AI Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                        </StackPanel>
+
+                        <!--end 内容区-->
+                    </TabItem>
+
+                    <TabItem Header="Calendar" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                        <TabItem.Background>
+                            <ImageBrush ImageSource="images/calendaricon.png" />
+                        </TabItem.Background>
+                        <!--内容区-->
+                        <StackPanel Margin="2,6,2,2" >
+                            <Label Content="DOC Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                        </StackPanel>
+
+                        <!--end 内容区-->
+                    </TabItem>
+
+                    <TabItem Header="Statistics" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                        <TabItem.Background>
+                            <ImageBrush ImageSource="images/graphicon.png" />
+                        </TabItem.Background>
+                        <!--内容区-->
+                        <StackPanel Margin="2,6,2,2" >
+                            <Label Content="JD Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                            <Label Content="Graphic Design" Foreground="White" Margin="0,6,0,6"/>
+                            <Border >
+                                <Image Source="images/line.png"/>
+                            </Border>
+                        </StackPanel>
+
+                        <!--end 内容区-->
+                    </TabItem>
+
+
+                </TabControl>
+            </StackPanel>
+            <!--end tab-->
+            <StackPanel  Grid.Column="1" Grid.Row="1" Background="White" Margin="0,0,1,0" Orientation="Horizontal">
+                <!-- Expand button-->
+                <Border x:Name="spliter" Width="32" Height="64" Margin="-10" Cursor="Hand" MouseLeftButtonDown="spliter_MouseLeftButtonDown">
+                    <Border.Background>
+                        <ImageBrush ImageSource="images/panelexpand.png" Stretch="UniformToFill"/>
+                    </Border.Background>
+                </Border>
+             
+                <!--end Expand button-->
+                <!--加载其他的page xaml-->
+                <Frame Name="pageContainer" Margin="33,18,33,18" ScrollViewer.CanContentScroll="True" NavigationUIVisibility="Hidden"  />
+                <!--加载其他的xaml窗体,但是必须frm.show才能显示，有闪烁
+                <ContentControl Name="frmContainter" Margin="2" ></ContentControl>
+                -->
+            </StackPanel>
+            <!--end Content-->
+
+        </Grid>
+    </Grid>
+</Window>
