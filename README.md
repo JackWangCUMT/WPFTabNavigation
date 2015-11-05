@@ -20,13 +20,13 @@ WPFTabNavigation是一个WPF实现的主界面框架，可以使用页签导航�
   }
 ```
 ##What is WPFTabNavigation
-WPFTabNavigation is a WPF Main Window that can navigate to different page by Tab Navigation.
+WPFTabNavigation is a WPF Main Window that can navigate to different page by tab navigation.
 
 The Main UI like:
 ![Main UI](http://images.cnblogs.com/cnblogs_com/isaboy/751632/o_MainForm.jpg)
 ##Main Features of WPFTabNavigation
-* Use Custom Style to Custom TabControl，easy to modify style to fill your need.
-* Click TabNavigation Tab Can navigate(load) page in MainWindow
+* Use Custom Style and Template to Custom Tab Control，Easy to Modify Style to Fill Your Need.
+* Click TabNavigation Tab Can Navigate(Load) Page in MainWindow.
 
 
 ##Thanks
