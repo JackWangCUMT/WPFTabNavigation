@@ -2,7 +2,7 @@
 WPFTabNavigation是一个WPF实现的主界面框架，可以使用页签导航到不同的页面。
 
 主界面如下：
-![Main UI](http://images.cnblogs.com/cnblogs_com/isaboy/751632/o_MainForm.jpg)
+![Main UI](https://github.com/JackWangCUMT/WPFTabNavigation/blob/master/MainForm.jpg)
 ##WPFTabNavigation主要特征
 * 自定义的TabControl，可以修改样式进行快速定制
 * 单击页签，可以跳转到不同的页面
