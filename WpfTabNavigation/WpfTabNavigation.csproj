@@ -70,6 +70,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Converter\CalendarConveter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -81,6 +82,10 @@
     <Page Include="pages\Page_Chart2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\DatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="styles\TabControlStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -151,6 +156,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\panelexpand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\dropdownbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\toggleButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\textBg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

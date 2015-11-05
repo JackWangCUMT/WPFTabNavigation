@@ -79,7 +79,7 @@ namespace WpfTabNavigation.pages
 
             var plot = new PlotModel
             {
-                Title = "正太分布",
+                Title = "正态分布",
                 Subtitle = "概率密度函数"
             };
 

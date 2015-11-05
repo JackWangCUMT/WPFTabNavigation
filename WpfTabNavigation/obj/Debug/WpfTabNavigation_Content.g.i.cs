@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/panel%20expand%20button.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/textbg.jpg")]
 
 

@@ -59,6 +59,15 @@ namespace WpfTabNavigation
         {
             InitializeComponent();
             this.notifyCount.Text = "20";
+            // 应用下拉日历样式
+            TextBox tb = new TextBox();            
+            Style sCalendar = (Style)tb.TryFindResource("tbCalendarStyle");
+            if (sCalendar != null)
+                this.datePick.Style = sCalendar;
+            //应用动画
+            System.Windows.Media.Animation.Storyboard s = (System.Windows.Media.Animation.Storyboard)TryFindResource("sb");
+            s.Begin();	// Start animation
+
         }
 
    
@@ -101,5 +110,13 @@ namespace WpfTabNavigation
         {
             this.pageContainer.Source = new Uri("pages/Page_Chart2.xaml", UriKind.RelativeOrAbsolute);
         }
+
+        private void TabItem_MouseMove_1(object sender, MouseEventArgs e)
+        {
+             //var part_text= this.LeftTabControl.Template.FindName("PART_Text", this.LeftTabControl);
+            //null
+        }
+
+     
     }
 }

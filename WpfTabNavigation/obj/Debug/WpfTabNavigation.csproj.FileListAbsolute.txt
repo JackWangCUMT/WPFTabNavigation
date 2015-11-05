@@ -25,3 +25,7 @@ c:\users\wangming\documents\visual studio 2012\Projects\WpfTabNavigation\WpfTabN
 c:\users\wangming\documents\visual studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\pages\Page_Chart.g.cs
 c:\users\wangming\documents\visual studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\pages\Page_Chart2.baml
 c:\users\wangming\documents\visual studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\pages\Page_Chart2.g.cs
+C:\Users\wangming\Documents\Visual Studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\WpfTabNavigation.csprojResolveAssemblyReference.cache
+C:\Users\wangming\Documents\Visual Studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\wangming\Documents\Visual Studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\WpfTabNavigation_MarkupCompile.lref
+C:\Users\wangming\Documents\Visual Studio 2012\Projects\WpfTabNavigation\WpfTabNavigation\obj\Debug\styles\DatePicker.baml

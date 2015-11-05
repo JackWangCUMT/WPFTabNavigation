@@ -97,18 +97,7 @@
 							</Border.Background>
 						</Border>
                         <!--文本颜色设置-->
-                        <TextBlock Margin="0,0.333,0,3.833" TextWrapping="Wrap" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Grid.Row="1" HorizontalAlignment="Center" Text="{TemplateBinding Header}" Foreground="Black" >
-
-                            <TextBlock.Style>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property= "Foreground" Value="#FF00D1E5"/>
-                                    <Style.Triggers>
-                                        <Trigger Property ="IsMouseOver" Value="True">
-                                            <Setter Property= "Foreground" Value="Black"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </TextBlock.Style>
+                        <TextBlock Name="PART_Text" Margin="0,0.333,0,3.833" TextWrapping="Wrap" VerticalAlignment="Stretch" d:LayoutOverrides="Height" Grid.Row="1" HorizontalAlignment="Center" Text="{TemplateBinding Header}" Foreground="#FF00D1E5" >
                            
                         </TextBlock>
                         <!--图标-->
@@ -128,7 +117,9 @@
 						<Trigger Property="IsSelected" Value="true">
 							<Setter Property="Visibility" TargetName="Bd" Value="Visible"/>
                             <Setter Property="Panel.ZIndex" TargetName="ico" Value="1"/>
-						</Trigger>
+                            <!--用一个控件的状态，利用 TargetName可以配置其他的命名控件的样式-->
+                            <Setter Property="Foreground" TargetName="PART_Text" Value="Black" />
+ 						</Trigger>
 						<MultiTrigger>
 							<MultiTrigger.Conditions>
 								<Condition Property="IsSelected" Value="false"/>

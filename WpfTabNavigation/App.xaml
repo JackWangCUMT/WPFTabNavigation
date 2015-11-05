@@ -4,11 +4,11 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
             <ResourceDictionary>
-                <ResourceDictionary.MergedDictionaries>
-                    
+                <ResourceDictionary.MergedDictionaries>               
                     <ResourceDictionary Source="styles/TabControlStyle.xaml"/>
-
-                </ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="styles/DatePicker.xaml"/>
+                 
+            </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
 
 
